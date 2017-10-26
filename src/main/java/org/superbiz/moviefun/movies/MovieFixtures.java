@@ -28,6 +28,7 @@ public class MovieFixtures {
     }
 
     public List<Movie> load() {
+        System.out.println("******* Inside MovieFixtures.load *************");
         return readFromCsv(objectReader, "movie-fixtures.csv");
     }
 }
