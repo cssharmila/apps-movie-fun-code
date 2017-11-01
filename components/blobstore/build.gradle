@@ -1,0 +1,6 @@
+apply from: "../../java.gradle"
+
+dependencies{
+    compile "com.amazonaws:aws-java-sdk:1.11.74"
+    compile "org.apache.tika:tika-core:1.14"
+}
