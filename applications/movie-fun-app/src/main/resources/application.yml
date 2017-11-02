@@ -1,4 +1,7 @@
 spring:
+  application:
+    name: movie-fun-app
+
   jpa:
     generate-ddl: true
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
@@ -20,9 +23,9 @@ s3:
   bucketName: <name of the bucket>
 
 albums:
-  url: http://localhost:8081/albums
+  url: //album-service/albums
 movies:
-  url: http://localhost:8082/movies
+  url: //movie-service/movies
 
 security:
   basic:
