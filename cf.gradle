@@ -3,6 +3,7 @@ def services = [
     [type: "p-mysql", plan: "100mb", instance: "album-database"],
     [type: "p-identity", plan: "basic-sso", instance: "movie-fun-sso"],
     [type: "p-service-registry", plan: "standard", instance: "movie-fun-registry"],
+    [type: "p-config-server", plan: "standard", instance: "movie-fun-config", config: "config-server.json"]
 ]
 
 task teardownPcfEnv {
